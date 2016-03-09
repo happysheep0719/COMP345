@@ -18,7 +18,7 @@ public:
 
 	void buyPowerPlant(PowerPlantCard aPowerPlant, int pay);
 	
-	int BuyResource(TypeOfResource type, int quantity);
+	int BuyResource(TypeOfResource type, int quantity); // return how many resources of one kind the player can buy 
 
 	void AddResource(TypeOfResource type, int quantity);
 	

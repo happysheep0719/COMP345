@@ -79,8 +79,8 @@ int Player::BuyResource(TypeOfResource type, int quantity){
 	if (quantity > canBuy){
 		quantity = canBuy;
 	}
-	return quantity;
 
+	return quantity;
 }
 
 void Player::AddResource(TypeOfResource type, int quantity){

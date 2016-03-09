@@ -11,10 +11,9 @@ public:
 	ResourceMarket();
 	~ResourceMarket();
 
-	void buyResource(Player * aPlayer, TypeOfResource type, int quantity); 
+	void buyResource(Player * aPlayer, TypeOfResource type, int quantity); // actually buy resources here
 
 	void reSupplyResourceMarket(int coal, int oil, int garbage, int uranium);
-
 
 	void displayResourceMarket();
 

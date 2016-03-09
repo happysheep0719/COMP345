@@ -15,11 +15,11 @@ ResourceMarket::~ResourceMarket()
 }
 
 void ResourceMarket::buyResource(Player* aPlayer, TypeOfResource type, int quantity){
-	if (quantity>resourceNum[type]){
+	if (quantity > resourceNum[type]){
 		quantity = resourceNum[type];
 	}
 
-	//buy one by one;
+	// buy one by one, one for each time
 	for (int i = 0; i < quantity; i++){
 		int pay = getResourcePrice(type);
 		if (aPlayer->GetPossession()->SpendMoney(pay)){
